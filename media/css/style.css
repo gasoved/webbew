@@ -1,0 +1,1474 @@
+/* Web/beW Design Stylesheet */
+
+/* Reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* end reset */
+
+/* classes */
+
+body{
+	background-image:url('../img/bg.png');
+	overflow:hidden;
+}
+
+h1{
+	color:#ffffff;
+	font-size:20px;
+	font-family: tahoma, Arial, sans-serif;
+	font-weight:bold;
+	letter-spacing:-0.2px;
+	line-height:32px;
+}
+
+h3{
+	color:#ffffff;
+	font-size:14px;
+	font-family: tahoma, Arial, sans-serif;
+	font-weight:bold;
+	letter-spacing:-0.2px;
+	line-height:16px;
+}
+
+.text{
+	font-family: tahoma, Arial, sans-serif;
+	font-size: 14px;
+	letter-spacing:0.5px;
+	line-height:16px;
+	text-align:justify;
+	color:#000000;
+}
+
+/*.text:first-letter{ incredible ie8 jquery durated animation bugfix
+	font-size: 1.1em;
+	font-weight:bold;
+}*/
+
+.paraf{
+	margin-top:1em;
+	margin-bottom:0.4em;
+}
+
+.saydam{
+	opacity:0;
+	filter:alpha(opacity=0)
+}
+
+.floatleft{
+	float:left;
+}
+
+.floatright{
+	float:right;
+}
+
+ul.list{
+	list-style:disc inside;
+	line-height:20px;
+}
+
+.portfolioajax{
+	cursor:pointer;
+}
+
+img.ajaxloaderimg{
+    margin-left:10px;
+    vertical-align:middle;
+}
+
+.underlined{
+	text-decoration:underline;
+}
+
+.onpx, span#reportcon.onpx{
+	font-size:10px;
+}
+
+/* link styles */
+
+a:link{color:#4BDAAB;}
+a:visited{color:#025f40;}
+a:hover{color:#ffffff;}
+a:active{color:#ff0000;}
+
+/*.loadedimg{
+	display:none;
+}*/
+
+/* id's */
+
+#main{
+	position:absolute;
+	left: 30%;
+	top:20%;
+	width:500px;
+	height:308px;
+	background-color:#09a06f;
+	/*display:none;*/
+}
+
+#maintextbox{
+	position:absolute;
+	left: 116px;
+	top:96px;
+	width:272px;
+	height:102px;
+	padding-top:22px;
+	background-image:url('../img/logo.png');
+	background-repeat:no-repeat;
+}
+
+#outus_link{
+	position:absolute;
+	left: -106px;
+	top:6px;
+}
+
+#rtfolio_link{
+	position:absolute;
+	left: 98px;
+	top:-86px;
+}
+
+#uffs_link{
+	position:absolute;
+	right: -101px;
+	top:23px;
+}
+
+#ntactcontract_link{
+	position:absolute;
+	left: 51.5px;
+	bottom:-78px;
+}
+
+/* end of main */
+
+	#aboutuskutu{
+		position:relative;
+		left:-220px;
+		top:106px;
+		width:190px;
+		height:96px;
+		background-color:#09a06f;
+		display:none;
+	}
+
+	#aboutus{
+		background-color:#09a06f;
+		position:absolute;
+		left:-1050px;
+		top:-91px;
+		width:800px;
+		height:490px;
+		opacity:0;
+		filter:alpha(opacity=0)
+	}
+
+	#aboutustextbox{
+		width:556px; /* sagmainback resminin 54px'lik genişliğini düşüldü */
+		height:300px;
+		position:absolute;
+		left:96px;
+		top:96px;
+		background-color:transparent; /* oluşurken çift katman göstermesin */
+	}
+
+	#aboutustextbox > *{
+		display:none;
+	}
+
+	#aboutussagmainback{
+		position:absolute;
+		right: -133px;
+		top:85px;
+	}
+
+	#rvices_link{
+		position:absolute;
+		left: -86px;
+		top:95px;
+	}
+
+	/**/
+
+		#serviceskutu{
+			position:relative;
+			left:-1270px;
+			top:10px;
+			width:190px;
+			height:96px;
+			background-color:#09a06f;
+			display:none;
+		}
+
+		#services{
+			background-color:#09a06f;
+			position:absolute;
+			left:-1050px;
+			top:0px;
+			width:800px;
+			height:490px;
+			opacity:0;
+			filter:alpha(opacity=0)
+		}
+
+		#servicestextbox{
+			width:556px; /* sagmainback resminin 54px'lik genişliğini düşüldü */
+			height:300px;
+			position:absolute;
+			left:96px;
+			top:96px;
+			background-color:transparent; /* oluşurken çift katman göstermesin */
+		}
+
+		#servicestextbox > *{
+			display:none;
+		}
+
+		#servicessagaboutus{
+			position:absolute;
+			right: -138px;
+			top:95px;
+		}
+
+
+		/**/
+
+	#portfoliokutu{
+		position:relative;
+		top:-220px;
+		left:202px;
+		width:96px;
+		height:190px;
+		background-color:#09a06f;
+		display:none;
+	}
+
+	#portfolio{
+		background-color:#09a06f;
+		position:absolute;
+		left:-122px;
+		top:-710px;
+		width:744px;
+		height:460px;
+		opacity:0;
+		filter:alpha(opacity=0)
+	}
+
+	#portfoliotextbox{
+		width:554px;
+		height:270px;
+		position:absolute;
+		left:96px;
+		top:96px;
+	}
+
+	#portfoliotextbox > *{
+		display:none;
+	}
+
+	#portfolioustmainback{
+		position:absolute;
+		bottom: -83px;
+		left:211.5px;
+	}
+	
+	#rtfoliodetail_link{
+		position:absolute;
+		top: 99px;
+		left:580px;
+	}
+	
+
+	/**/
+
+		#portfoliodetailkutu{
+			position:relative;
+			top:-718px;
+			left:652px;
+			width:190px;
+			height:96px;
+			background-color:#09a06f;
+			display:none;
+		}
+
+		#portfoliodetail{
+			background-color:#09a06f;
+			position:absolute;
+			left:994px;
+			top:-20px;
+			width:900px;
+			height:500px;
+			opacity:0;
+			filter:alpha(opacity=0)
+		}
+
+		#portfoliodetailtextbox{
+			width:710px;
+			height:310px;
+			position:absolute;
+			left:96px;
+			top:96px;
+		}
+		
+			/* olverlay pan zoom */
+		
+			#portfoliopreviewajax{
+				float:right;
+				margin-left:32px;
+			}
+			
+			#portfoliopreviewajaxthumb{
+				cursor:url('../img/zoom.cur'),default;
+				border: 1px solid #4BDAAB;
+			}
+			
+			#portfoliopreviewajaxbig{
+				position:fixed;
+				display:none;
+				z-index:2600;
+			}
+		
+			#previewicons{
+				margin-top:8px;
+				text-align:center;
+				width:269px;
+			}
+			
+			#previewicons a{text-decoration:none;}
+
+			#previewicons img{
+				margin-left:20px;
+				margin-right:3px;
+				vertical-align:middle;
+			}
+			
+			#gtwbbutton{
+				vertical-align:middle;
+			}
+			
+			.ajaxhide{
+				border: 1px solid #000000;
+			}
+
+		#portfoliodetailtextbox > *{
+			display:none;
+		}
+
+		#portfoliodetailsolportfolio{
+			position:absolute;
+			bottom: 113px;
+			left:-86px;
+		}
+		
+		#rtfoliopreview_link{
+			position:absolute;
+			top: -86px;
+			left:237.5px;
+		}
+
+		/**/
+
+	#stuffskutu{
+		position:relative;
+		left:530px;
+		top:106px;
+		width:1590px;
+		height:96px;
+		background:#09a06f url(../img/lnglng.png) repeat scroll 50% 50%;
+		display:none;
+	}
+
+	#stuffs{
+		background-color:#09a06f;
+		position:absolute;
+		left:2150px;
+		top:4px;
+		width:400px;
+		height:300px;
+		opacity:0;
+		filter:alpha(opacity=0)
+	}
+
+	#stuffstextbox{
+		width:210px;
+		height:110px;
+		position:absolute;
+		left:96px;
+		top:96px;
+	}
+
+	#stuffstextbox > *{
+		display:none;
+	}
+
+	#stuffssolmainback{
+		position:absolute;
+		left: -85px;
+		top:-14px;
+	}
+	
+	#ticles_link{
+left:240px;
+position:absolute;
+top:15px;
+	}
+	
+	#ols_link{
+left:79.5px;
+position:absolute;
+top:-86px;
+	}
+	
+	#periments_link{
+left:43px;
+position:absolute;
+top:138px;
+	}
+	
+	/**/
+	
+		#articleskutu{
+			position:relative;
+			left:2580px;
+			top:10px;
+			width:190px;
+			height:96px;
+			background-color:#09a06f;
+			display:none;
+		}
+
+		#articles{
+			background-color:#09a06f;
+			position:absolute;
+			left:650px;
+			top:-136px;
+			width:900px;
+			height:580px;
+			opacity:0;
+			filter:alpha(opacity=0)
+		}
+
+		#articlestextbox{
+			width:710px;
+			height:390px;
+			position:absolute;
+			left:96px;
+			top:96px;
+		}
+
+		#articlestextbox > *{
+			display:none;
+		}
+
+		#articlessolstuffs{
+			position:absolute;
+			left: -85px;
+			top:167px;
+		}
+		
+		/**/
+		
+		#toolskutu{
+			background-color:#09A06F;
+			height:190px;
+			left:2302px;
+			position:relative;
+			top:-312px;
+			width:96px;
+			display:none;
+		}
+
+		#tools{
+			background-color:#09a06f;
+			position:absolute;
+			left:-200px;
+			top:-750px;
+			width:800px;
+			height:500px;
+			opacity:0;
+			filter:alpha(opacity=0)
+		}
+
+		#toolstextbox{
+			width:610px;
+			height:310px;
+			position:absolute;
+			left:96px;
+			top:96px;
+		}
+
+		#toolstextbox > *{
+			display:none;
+		}
+
+		#toolsaltstuffs{
+			position:absolute;
+			left: 277px;
+			top:338px;
+		}
+		
+		/**/
+		
+		#experimentskutu{
+			background-color:#09A06F;
+			height:190px;
+			left:2302px;
+			position:relative;
+			top:238px;
+			width:96px;
+			display:none;
+		}
+
+		#experiments{
+			background-color:#09a06f;
+			position:absolute;
+			left:0px;
+			top:550px;
+			width:400px;
+			height:580px;
+			opacity:0;
+			filter:alpha(opacity=0)
+		}
+
+		#experimentstextbox{
+			width:210px;
+			height:390px;
+			position:absolute;
+			left:96px;
+			top:96px;
+		}
+
+		#experimentstextbox > *{
+			display:none;
+		}
+
+		#experimentsuststuffs{
+			position:absolute;
+			left: 77px;
+			top:-86px;
+		}
+
+		/**/
+
+	#contactcontractkutu{
+		position:relative;
+		top:338px;
+		left:202px;
+		width:96px;
+		height:190px;
+		background-color:#09a06f;
+		display:none;
+	}
+
+	#contactcontract{
+		background-color:#09a06f;
+		position:absolute;
+		left:48px;
+		top:558px;
+		width:400px;
+		height:246px;
+		opacity:0;
+		filter:alpha(opacity=0)
+	}
+
+	#contactcontracttextbox{
+		width:210px;
+		height:110px;
+		position:absolute;
+		left:96px;
+		top:96px;
+	}
+
+	#contactcontracttextbox > *{
+		display:none;
+	}
+
+	#contactcontractaltmainback{
+		position:absolute;
+		left:39.5px;
+		top:-86px;
+	}
+
+	#ntact_link{
+		position:absolute;
+		left:-86px;
+		top:-12px;
+	}
+
+	#ntract_link{
+		position:absolute;
+		right:-83px;
+		top:-16px;
+	}
+
+	/**/
+
+		#contactkutu{
+			position:relative;
+			top:443px;
+			left:-172px;
+			width:190px;
+			height:96px;
+			background-color:#09a06f;
+			display:none;
+		}
+
+		#contact{
+			background-color:#09a06f;
+			position:absolute;
+			left:-850px;
+			top:-152px;
+			width:600px;
+			height:550px;
+			opacity:0;
+			filter:alpha(opacity=0)
+		}
+
+		#contacttextbox{
+			width:410px;
+			height:360px;
+			position:absolute;
+			left:96px;
+			top:96px;
+		}
+
+		#contacttextbox > *{
+			display:none;
+		}
+
+		#contactsagcontactcontract{
+			position:absolute;
+			right:-83px;
+			top:91px;
+		}
+		
+			/*İletişim Formu*/
+
+			#contactform{
+				margin-top: 10px;
+				padding:5px;
+			}
+						
+			#contactform label{
+				display:block;
+				margin-bottom: 6px;
+				color:#000;
+				font-weight:bold;
+				margin-right:4px;
+			}
+			
+			#contractformcol2 label{
+				margin-right:4px;
+			}	
+
+			.formstyle{
+				background-color:#267159;
+				color:#ffffff;
+				border:1px inset #025F40;
+				padding:2px;
+			}
+			
+			#contactform input.formstyle{
+				margin-bottom: 5px;
+				width:200px;
+				height:18px;
+			}
+
+			#contactmessage{
+				width:300px;
+				height:112px;
+				overflow:hidden;
+				resize: none;
+			}
+			
+			#contactform input[type="submit"]{
+				color:#ffffff;
+				background-color:#025F40;
+				border-width:2px;
+				border-color:#267159;
+				width:100px;
+				height:24px;
+				padding:0;
+				margin-top:10px;
+				text-align:center;
+			}
+			
+			.contacttips{
+				display: none;
+				margin: 0px;
+				z-index: 0; /* menubar'ın üstüne taşmasın */
+				position: absolute;
+				padding: 4px;
+				font-family: tahoma, Arial, sans-serif;
+				font-size: 14px;
+				text-align: center;
+				color:#4BDAAB;
+				border: 1px solid #267159;
+				background-image: url('../img/koselik.png');
+				background-repeat: no-repeat;
+				background-position: bottom left;
+				background-color: #080707;
+				-moz-border-radius: 0.3em 0.3em 0.3em 0;
+				-webkit-border-radius: 0.3em 0.3em 0.3em 0;
+				border-radius: 0.3em 0.3em 0.3em 0;
+				opacity: 0.80;
+				filter:alpha(opacity=80)
+			}
+			
+			#tcontactsubject{
+				height:24px;
+				left:250px;
+				top:68px;
+				width:142px;
+			}
+			#tcontactemail{
+				height:24px;
+				left:250px;
+				top:119px;
+				width:160px;
+			}
+			#tcontactmessage{
+				height:20px;
+				left:351px;
+				top:175px;
+				width:60px;
+			}
+
+			#gcontactsubject{
+				position:absolute;
+				left:215px;
+				top:94px;
+			}
+			#gcontactemail{
+				position:absolute;
+				left:215px;
+				top:146px;
+			}
+			#gcontactmessage{
+				position:absolute;
+				left:316px;
+				top:198px;
+			}
+			
+			/*#contactformreport{ full'ü anadosya içine taşındı */
+			#contactformreport{
+				font-size:12px;
+				display:block;
+			}
+			
+			.reportcon img{
+				vertical-align:middle;
+			}
+
+		/**/
+
+		#contractkutu{
+			position:relative;
+			top:443px;
+			left:478px;
+			width:190px;
+			height:96px;
+			background-color:#09a06f;
+			display:none;
+		}
+
+		#contract{
+			background-color:#09a06f;
+			position:absolute;
+			left:650px;
+			top:-167px;
+			width:900px;
+			height:580px;
+			opacity:0;
+			filter:alpha(opacity=0)
+		}
+
+		#contracttextbox{
+			width:770px;
+			height:430px;
+			position:absolute;
+			left:96px;
+			top:56px;
+		}
+
+		#contracttextbox > *{
+			display:none;
+		}
+
+		#contractsolcontactcontract{
+			position:absolute;
+			left:-86px;
+			top:147px;
+		}
+		
+			/* Anlaşma Formu */
+
+			#contractform{
+				margin-top: 0.83em;
+				padding:0.41em;
+			}
+				
+			#contractform input.formstyle{
+				margin-bottom: 0.41em;
+				width:13.13em;
+				height:1.33em;
+			}
+		
+			#contractform label{
+				display:block;
+				margin-bottom: 0.5em;
+				font-weight:normal;
+				color:#ffffff;
+			}
+			
+			#contractform label.noblock{
+				display:inline;
+			}
+			
+			input#contractareacode.formstyle{
+				width:2em;
+   
+			}
+			
+			input#contractphoneno.formstyle{
+				width:6.16em;
+			}
+
+			#contractform fieldset{
+				border:0.09em solid #000000;
+				padding:0.41em;
+				font-weight:bold;
+				color:#000000;
+				margin-bottom:0.83em;
+			}
+
+			.rtext{
+				font-family: tahoma, Arial, sans-serif;
+				font-size: 12px;
+				letter-spacing:0.5px;
+				line-height:1.16em;
+				text-align:left;
+				color:#ffffff;
+			}
+			
+			#contractform select.formstyle{
+				margin-bottom: 0.41em;
+				overflow:auto;
+			}
+			
+			#contractform option.formstyle{
+				
+			}
+
+			#contractjobdescription{
+				width:23.33em;
+				height:9.33em;
+				overflow:hidden;
+				resize: none;
+				margin-bottom:0.41em;
+			}
+			
+			#contractjobtype{
+				margin-right:1em;
+				width:9.375em;
+				height:7em;
+			}
+			
+			#contractbudget{
+				width:9.29em;
+				height:1.8em;
+			}
+			
+			#contracthowtc{
+				width:5.87em;
+				height:1.8em;
+			}
+			
+			#contractcountry{
+				width:5.87em;
+				height:1.8em;
+			}
+
+			#contractform input[type="file"]{
+				border:0.08em solid #267159;
+				width:11.13em;
+				height:1.83em;
+			}
+			
+			#contractform input[type="submit"]{
+				color:#ffffff;
+				background-color:#025F40;
+				border-width:0.16em;
+				border-color:#267159;
+				width:8.33em;
+				height:2em;
+				padding:0;
+				text-align:center;
+				position:absolute;
+				right:1em;
+				bottom:-2em;
+			}
+			
+			#afterIM{
+				margin-left:0.41em;
+			}
+			
+			#contractformcol1{
+				width:19.16em;
+				height:33.58em;
+				float:left;
+				margin-right:0.83em;
+			}
+			
+			#col1f1{
+				width:19.16em;
+				height:21.91em;
+			}
+			
+			#col1f2{
+				width:19.16em;
+				height:9.88em;
+			}
+			
+			#contractformcol2{
+				float:left;
+				height:33.58em;
+				margin-left:20em;
+				margin-top:-33.58em;
+				width:41.66em;
+			}
+			
+			#col2f1{
+				width:41.66em;
+				height:33.58em;
+				margin-left:1em;
+			}
+			
+			#contractform input[type="checkbox"]{
+				width:1.5em;
+				height:1.08em;
+				vertical-align:middle;
+			}
+
+			#addAfter input.formstyle{
+				width:1.66em;
+				margin-left:0.33em;
+				vertical-align:middle;
+			}
+
+			#addAfter label{
+				margin-left:0.33em;
+			}
+
+			#addAfter{
+				position:absolute;
+				left:32em;
+				top:11.7em;
+			}
+
+			#addHere1{
+				height:2.25em;
+				width:31em;
+			}
+
+			#addHere2{
+				height:2.25em;
+				width:31em;
+			}
+
+			#addHere3{
+				height:2.25em;
+				width:31em;
+			}
+
+			#addHere4{
+				height:1.5em;
+				width:31em;
+			}
+			
+			#cmsSelect{
+				height:1.8em;
+				width:7.8em;
+			}
+			
+			#afterIM{
+				height:1.8em;
+				width:7.87em;
+			}
+			
+			span.contacttips{
+				font-weight:normal;
+			}
+			
+			#tcontractname{
+				width:142px;
+				height:24px;
+				left:216px;
+				top:62px; /* webkit top: 59px */
+			}
+			#tcontractsurname{
+				width:142px;
+				height:24px;
+				left:216px;
+				top:109px; /* webkit top: 102px */
+			}
+			
+			#tcontractemail{
+				width:160px;
+				height:24px;
+				left:216px;
+				top:204px; /* webkit top: 186px; */
+			}
+			
+			#tcontractjobdescription{
+				width:60px;
+				height:20px;
+				left:590px;
+				top:227px; /* webkit top: 217px; */
+			}
+
+			#gcontractname{
+				position:absolute;
+				left:180px;
+				top:92px; /* webkit top: 89px */
+			}
+			#gcontractsurname{
+				position:absolute;
+				left:180px;
+				top:139px; /* webkit top: 132px; */
+			}
+			#gcontractemail{
+				position:absolute;
+				left:180px;
+				top:234px; /* webkit top: 216px; */
+			}
+			#gcontractjobdescription{
+				position:absolute;
+				left:554px;
+				top:253px; /* webkit top: 243px; */
+			}
+			
+			/*#contractformreport{ full'ü anadosya içine taşındı */
+			#contractformreport{
+				font-size:12px;
+				display:block;
+			}
+			
+			.reportcon img{
+				vertical-align:middle;
+			}
+
+		/**/
+
+/* Menubar */
+
+#menubarlimiter{
+	width: 1680px;
+	height: 1050px;
+}
+
+#draghandler{
+	height: 16px;
+	width:100%;
+	background-color:#025F40;
+}
+
+#menubar {
+	width: 202px;
+	border: 1px solid #025F40;
+	left:10%;
+	top:10%;
+}
+
+#menubarcontent{
+	width: 195px;
+	height: 254px;
+	border: 1px solid #4BDAAB;
+	border-bottom:none;
+	border-right:none;
+}
+
+#minimizemenu{
+	cursor:pointer;
+}
+
+#menubarcontent > ul{
+	width:188px;
+}
+
+#menubarcontent > ul li{
+	font-size:11px;
+}
+
+#menubarcontent > ul li a{
+	padding:3px 5px;
+}
+
+#menubarcontent > div{
+	width:195px;
+	padding:6px 0 0 0;
+}
+
+#menubariconwrapper{
+	font-size:11px;
+	width:195px;
+}
+
+#menubariconwrapper a,#mbrwrapper1 a{text-decoration:none;display:block;}
+#menubariconwrapper li:hover,#backwra:hover,#bookmark:hover,#clipboard:hover{border: 1px inset #09A06F;}
+
+#zerocontainter{
+	position:absolute;
+}
+
+#menubariconwrapper li{
+    border: 1px outset #09A06F;
+}
+
+#menubarul1{
+	border: 1px inset #09A06F;
+	border-right:none;
+}
+
+#menubarul2{
+	border: 1px inset #09A06F;
+	border-right:none;
+	border-left:none;
+}
+
+#menubarul3{
+	border: 1px inset #09A06F;
+	border-left:none;
+}
+
+.col{
+	float:left;
+	width:65px;
+	text-align:center;
+	padding-top:2px;
+}
+
+#mbrwrapper1{
+	margin-top:105px;
+}
+
+#mbrwrapper1 img{
+	vertical-align:top;
+	margin-right:5px;
+}
+
+#mbrwrapper2{
+	border: 1px inset #09A06F;
+	display:block;
+}
+
+#backwra,#bookmark,#clipboard{
+	font-size:12px;
+	display:block;
+	line-height:16px;
+	vertical-align:middle;
+	border: 1px outset #09A06F;
+	padding-left:2px;
+	padding-bottom:2px;
+	cursor:pointer;
+}
+
+#menubarreport{
+	margin-top:16px;
+	display:block;
+	text-align:center;
+}
+
+			/*Login Form*/
+
+			#loginform{
+				margin-top: 0px;
+				padding:5px;
+			}
+						
+			#loginform label{
+				display:block;
+				margin-bottom: 0px;
+				color:#000000;
+				font-size:12px;
+			}
+			
+			#loginform input.formstyle{
+				margin-bottom: 0px;
+				width:180px;
+				height:14px;
+                font-size:12px;
+			}
+
+			#loginform input[type="submit"]{
+				color:#ffffff;
+				background-color:#025F40;
+				border-width:2px;
+				border-color:#267159;
+				width:60px;
+				height:20px;
+				padding:0;
+				margin-top:5px;
+				text-align:center;
+				font-size:12px;
+				float:right;
+			}
+			
+			#tloginusername{
+				height:34px;
+				left:198px;
+				top:100px;
+				width:120px;
+			}
+			#tloginpassword{
+				height:17px;
+				left:198px;
+				top:153px;
+				width:100px;
+			}
+
+			#loginformreport{
+				font-size:12px;				
+				position:absolute;
+				bottom:10px;
+				text-align:left;
+			}
+			
+			.lfr1{
+				float:left;
+				width:20px;
+				padding-top:1px;
+			}
+			
+			.lfr2{
+				float:left;
+				width:160px;
+			}
+			
+			#tabs-3 p.text{
+				font-size:12px;
+				padding:0 5px 3px;
+			}
+			
+			/* Dil Seçimi */
+			
+			#dilsecimi{
+				padding:0 5px 3px;
+			}
+
+			#dilsecimi h2{
+				font-weight:bold;
+			}
+			
+			#siteinfo a:link, #dilsecimi a:link{color:#000000;}
+			#siteinfo a:visited, #dilsecimi a:visited{color:#000000;}
+			#siteinfo a:hover, #dilsecimi a:hover{color:#ffffff;}
+			#siteinfo a:active, #dilsecimi a:active{color:#ff0000;}
+
+/* portfolio thumbs */
+
+#portfoliotextbox dl {float:left;text-align:center;padding-top:10px;}
+#portfoliotextbox dt,#portfoliotextbox dd {width:8.6em;float:left;}
+#portfoliotextbox dt {margin-bottom:4em;}
+#portfoliotextbox dd {margin:100px 0 0 -8.6em;}
+#portfoliotextbox dl img.thumbs {vertical-align:bottom;border:1px solid #4BDAAB;}
+#portfoliotextbox dl img.thumbs:hover{border:1px solid #ffffff;}
+#portfoliotextbox dl img.thumbsh {vertical-align:bottom;border:1px solid #ffffff;border-width:1px 8px 1px 8px;}
+#portfoliotextbox dl img.thumbsh:hover{border:1px solid #7CDABB;border-width:1px 8px 1px 8px;}
+
+/* tooltip */
+
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111111;
+	background-color: #7CDABB;
+	padding: 5px;
+	opacity: 0.85;
+}
+
+#tooltip h3, #tooltip div {
+	margin: 0;
+	font-weight:normal;
+	font-family: tahoma, Arial, sans-serif;
+	font-size: 14px;
+	color:#080707;
+}
+
+/* modal windows */
+
+#siteversion{
+	font-family:monospace;
+	color:#025F40;
+	font-size:8px;
+	font-weight:bold;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	cursor:pointer;
+}
+
+div[aria-labelledby="ui-dialog-title-siteinfo"]{
+	border:1px solid #025F40;
+}
+
+#siteinfo{
+	font-size:12px;
+	overflow:hidden;
+}
+
+#bugreportform{
+	height:113px;
+	margin-top:4px;
+	padding:5px;
+	width:224px;
+}
+
+#bugreportform label{
+	display:block;
+	margin-bottom: 6px;
+	color:#000;
+	font-weight:bold;
+}
+
+#bugreport{
+	width:218px;
+	height:96px;
+	overflow:hidden;
+	resize: none;
+}
+
+#bugreportlink{
+	font-size:12px;
+}
+
+#bugformreport{
+	position:absolute;
+	bottom:14px;
+	font-size:12px;
+}
+
+#bugload{
+	line-height:34px;
+}
+
+.bfr1{
+	float:left;
+}
+
+.bfr2{
+	float:left;
+	width:104px;
+}
+
+#ajaxpreloader{
+	display:none;
+}
+
+#nojs{
+	position:fixed;
+	top:10%;
+	left:10%;
+	background-color:#ffffff;
+	z-index:3000;
+	font-size:32px;
+}
+#nojs a:hover{color:#ff0000;}
+
+img.showcon{
+	margin-top: 4px;
+	margin-right:20px;
+	border:1px solid #4BDAAB;
+}
+
+.zoomable{
+	cursor:url('../img/zoom.cur'),default;
+}
+
+#zoomcon{
+	position:fixed;
+	display:none;
+	z-index:2600;
+	border:1px solid #000000;
+}
+
+/* scroller styles */
+
+#portfolioscrollerbox{
+    overflow:hidden;
+    width:554px;
+    border: 1px solid #4bdaab;
+}
+
+#portfolioscrollerbox dl{
+    background-color: #267159;
+    border: 1px inset #025f40;
+    width:1110px;
+    overflow:hidden;
+	position:relative;
+	height: 184px;
+}
+
+#portfolioscrollercont{
+	background-image:url("images/ui-bg_dots-small_100_267159_2x2.png");
+    background-color: #025F40;
+    border-top: 1px solid #000000;
+	bottom: -1px;
+    height: 22px;
+    left: 2px;
+    position: absolute;
+    width: 553px;
+}
+
+#portfolioscroller{
+    width:120px;
+    height:20px;
+    background-image:url("../img/scrollarrows.png");
+	background-color:#09A06F;
+	background-repeat:no-repeat;
+	background-position:center;
+    border: 1px outset #025f40;
+}
+
+.thumbstext{
+    color: #000000;
+    font-family: tahoma,Arial,sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    line-height: 9px;
+    text-align: justify;
+}
+
+#portfoliotextbox p{margin-bottom:10px;}

@@ -1,0 +1,149 @@
+/* Web/beW Design Stylesheet */
+
+/* Reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* end reset */
+
+/* classes */
+
+html{
+    height:100%;
+}
+
+body{
+	background-image:url('../img/bg.png');
+	height:100%;
+	font-family: tahoma, Arial, sans-serif;
+}
+
+h1{
+	color:#000000;
+	font-size:140%;
+	font-weight:bold;
+	letter-spacing:-0.01em;
+	line-height:200%;
+}
+
+h3{
+	color:#ffffff;
+	font-size:110%;
+	font-weight:bold;
+	letter-spacing:-0.01em;
+	line-height:110%;
+	margin: 1em 0;
+}
+
+p{
+	font-size:90%;
+	letter-spacing:0.05em;
+	line-height:120%;
+	text-align:justify;
+	color:#000000;
+	margin:1em 0;
+}
+
+p:first-letter{
+	font-size: 110%;
+	font-weight:bold;
+}
+
+.white{
+	color:#ffffff;
+}
+
+.floatright{
+	float:right;
+}
+
+ul{list-style-type:disc;}
+ol{list-style-type:decimal;}
+
+ul,ol{
+	list-style-position:inside;
+	line-height:110%;
+	margin:1em;
+	font-size:90%;
+}
+
+/* link styles */
+
+a:link{color:#4bdaab;}
+a:visited{color:#025f40;}
+a:hover{color:#ffffff;}
+a:active{color:#ff0000;}
+
+.hlink a:link{color:#000000;text-decoration:none;}
+.hlink a:visited{color:#000000;}
+.hlink a:hover{color:#ffffff;}
+.hlink a:active{color:#ffffff;}
+
+.parttitle a:link{color:#ffffff;text-decoration:none;}
+.parttitle a:visited{color:#ffffff;}
+.parttitle a:hover{color:#000000;}
+.parttitle a:active{color:#000000;}
+
+#main{
+	width:50%;
+	background-color:#09a06f;
+	margin: 0 auto;
+	text-align:left;
+	padding:2em 3em;
+	min-width:500px;
+}
+
+.ufak{font-size:70%;}
+
+.alignright{text-align:right;}
+.aligncenter{text-align:center;}
+
+.parttitle{margin-bottom:2em;}
+
+.copyright{
+	display:block;
+	margin-top:3em;
+	font-size:60%;
+}
+
+.margintop{margin-top:3em;}
+
+.date{
+	display:block;
+}
+
+#fbcommentcont .fb_iframe_widget{
+	background-color: #ffffff;
+    border: 1px solid #000000;	
+}
+
+img{border:1px solid #000000;}

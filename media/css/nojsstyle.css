@@ -1,0 +1,113 @@
+/* Web/beW Design Stylesheet */
+
+/* Reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* end reset */
+
+/* classes */
+
+html{
+    height:100%;
+}
+
+body{
+	background-image:url('../img/bg.png');
+	height:100%;
+	font-family: tahoma, Arial, sans-serif;
+}
+
+h1{
+	color:#ffffff;
+	font-size:140%;
+	font-weight:bold;
+	letter-spacing:-0.01em;
+	line-height:200%;
+}
+
+h3{
+	color:#ffffff;
+	font-size:110%;
+	font-weight:bold;
+	letter-spacing:-0.01em;
+	line-height:110%;
+	margin: 1em 0;
+}
+
+p{
+	font-size:90%;
+	letter-spacing:0.05em;
+	line-height:120%;
+	text-align:justify;
+	color:#000000;
+	margin:1em 0;
+}
+
+p:first-letter{
+	font-size: 110%;
+	font-weight:bold;
+}
+
+.white{
+	color:#ffffff;
+}
+
+.floatright{
+	float:right;
+}
+
+ul{
+	list-style:disc inside;
+	line-height:110%;
+	margin:1em;
+	font-size:90%;
+}
+
+/* link styles */
+
+a:link{color:#4BDAAB;}
+a:visited{color:#025f40;}
+a:hover{color:#ffffff;}
+a:active{color:#ff0000;}
+
+#main{
+	width:50%;
+	background-color:#09a06f;
+	margin: 0 auto;
+	text-align:center;
+	padding:2em 3em;
+}
+
+.ufak{
+	font-size:70%;
+}
